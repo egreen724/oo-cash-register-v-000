@@ -5,7 +5,7 @@ class CashRegister
   @@items = []
   @@total = []
   
-  def initialize(total = 0, employee_discount = true)
+  def initialize(total = 0, employee_discount = 0)
     self.total = total 
     self.employee_discount = employee_discount
   
@@ -22,7 +22,7 @@ class CashRegister
   end
   
   def apply_discount
-    if @employee_discount == true
+    if @employee_discount == 20
       self.total = ((@total * 80)/100).to_f 
       "After the discount, the total comes to $#{self.total}."
     else
