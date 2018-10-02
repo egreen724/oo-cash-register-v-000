@@ -1,3 +1,5 @@
+require "pry"
+
 class CashRegister 
   
   attr_accessor :total, :employee_discount, :title, :discount 
