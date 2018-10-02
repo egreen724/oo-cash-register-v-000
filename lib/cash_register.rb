@@ -5,7 +5,7 @@ class CashRegister
   @@items = []
   @@total = []
   
-  def initialize(total = 0, employee_discount = true)
+  def initialize(total = 0, employee_discount = 20)
     self.total = total 
     self.employee_discount = employee_discount
   
