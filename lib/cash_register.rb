@@ -29,7 +29,8 @@ class CashRegister
   
   def void_last_transaction
     if self.last_transaction != nil  
-    self.total = self.total - self.last_transaction
+    self.total - self.last_transaction
+    self.total 
   end 
   end
   
